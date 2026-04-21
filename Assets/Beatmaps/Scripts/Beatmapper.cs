@@ -42,6 +42,7 @@ public class Beatmapper : MonoBehaviour
             {
                 source.Play();
                 started = true;
+                paused = false;
                 playingLabel.text = "Song is playing.";
             }
             else if (!paused)
