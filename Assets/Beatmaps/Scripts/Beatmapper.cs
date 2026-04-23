@@ -114,10 +114,10 @@ public class Beatmapper : MonoBehaviour
 
             Debug.Log(json);
 
-            string path = "Assets/Beatmaps/" + filenameInput.text + ".json";
+            string path = "Assets/Resources/" + filenameInput.text + ".json";
             if (filenameInput.text.Length == 0)
             {
-                path = "Assets/Beatmaps/untitled.json";
+                path = "Assets/Resources/untitled.json";
             }
             File.WriteAllText(path, json);
         }
